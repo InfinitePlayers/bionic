@@ -1,10 +1,10 @@
-
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: './', 
+  // Sets the base path for assets to match your repository name "bionic"
+  base: '/bionic/', 
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
